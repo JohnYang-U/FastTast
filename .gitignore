@@ -1,0 +1,25 @@
+# 构建产物
+/build/
+/Log/
+/dist/
+
+# META SDK 由使用者自行提供（头文件 + 运行库），不随仓库分发
+/sdk/META/include/
+/sdk/META/bin/
+
+# 由 META 头文件生成的表，本地用 tools/gen_tables.py 生成
+/src/gen/FlagTable.inc
+/src/gen/TaskCatalog.inc
+
+# 根目录只跟踪 README，其余 .md 视为本机文档
+/*.md
+!/README.md
+
+# 本机状态
+*.user
+*.suo
+.vs/
+__pycache__/
+*.pyc
+/build/bin/METAQuickCheck.ini
+*.log
